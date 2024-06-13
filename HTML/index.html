@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="../IMG/Globant_Logo.svg.png" alt="Esta es una imagen de logo de la compañia de globant" class="img-logo">
+        </div>
+        <nav class="navegation">
+            <ul class="nav-list">
+                <li class="nav-item""><a class="item-link" id="item-link-green" href="#">Overview</a></li>
+                <li class="nav-item""><a class="item-link" href="#">Contacts</a></li>
+                <li class="nav-item""><a class="item-link" href="#">Favorites</a></li>
+                <li class="nav-item"">
+                    <a href="#" class="item-link">
+
+                        <button id="item-link-button-green">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                              </svg>
+                            New
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form class="container-form">
+            <input type="text" placeholder="First name" aria-label="Enter your name ">
+            <br>
+            <input type="text" placeholder="Last name" aria-label="Enter your last name">
+            <br>
+            <input type="email" placeholder="Email" aria-label="Enter your email">
+            <br>
+            <div class="container-check">
+                <label for="checkbox" id="favorite">Enable like favorite</label>
+                <input type="checkbox" aria-labelledby="favorite" id="checkbox">
+            </div>
+            <br>
+            <button class="botton-end">SAVE</button>
+        </form>
+    </div>
+</body>
+</html>
